@@ -1,0 +1,12 @@
+---
+title: "Make an API Request"
+description: "Learn how to make your first request to the Cartesia API."
+---
+
+Making an API request is simple. You will need your API key from the playground.
+
+```bash
+curl -X POST https://api.cartesia.ai/tts \
+  -H "Cartesia-Version: 2024-06-10" \
+  -H "X-API-Key: $CARTESIA_API_KEY"
+```
