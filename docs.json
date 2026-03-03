@@ -1,82 +1,60 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Cartesia",
+  "name": "Maedo",
   "modeToggle": {
     "default": "dark",
     "isHidden": false
   },
   "colors": {
-    "primary": "#32a852",
-    "light": "#2ecc71",
-    "dark": "#27ae60"
+    "primary": "#3b82f6",
+    "light": "#60a5fa",
+    "dark": "#1d4ed8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Models",
+        "tab": "Docs",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
               "index",
-              "make-an-api-request",
-              "authenticate-client-apps"
+              "quickstart"
             ]
           },
           {
-            "group": "Use an SDK",
+            "group": "Webchat",
             "pages": [
-              "sdk/javascript",
-              "sdk/python"
+              "agents/introduction",
+              "agents/quickstart",
+              "agents/configure"
             ]
           },
           {
-            "group": "Build with Cartesia",
-            "pages": [
-              "build/tts-models",
-              "build/stt-models",
-              "build/capability-guides",
-              "build/controllability"
-            ]
+            "group": "Features",
+            "pages": []
           },
           {
-            "group": "Integrations",
+            "group": "Core Capabilities",
             "pages": [
-              "integrations/mcp",
-              "integrations/livekit",
-              "integrations/vapi"
+              "build/encrypted-memory",
+              "build/progressive-data-collection",
+              "build/multi-channel-presence"
             ]
           }
         ]
       },
       {
-        "tab": "Agents",
+        "tab": "AI Tools",
         "groups": [
           {
-            "group": "Overview",
+            "group": "AI Extensions",
             "pages": [
-              "agents/overview"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Payments",
-            "pages": [
-              "api-reference/payments/overview",
-              "api-reference/payments/endpoints",
-              "api-reference/payments/addons"
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
             ]
           }
         ]
@@ -98,47 +76,43 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logo-bg-white.png",
+    "dark": "/images/logo-bg-black.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Homepage",
-        "href": "https://cartesia.ai"
+        "href": "https://maedo.in"
       },
       {
         "label": "Discord",
-        "href": "https://discord.gg/cartesia"
+        "href": "https://discord.gg/NYaQz6rZ"
       },
       {
         "label": "Log In",
-        "href": "https://play.cartesia.ai"
+        "href": "https://app.maedo.in/auth/signin"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Playground",
-      "href": "https://play.cartesia.ai"
+      "label": "Sign Up",
+      "href": "https://app.maedo.in/auth/signup"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/CartesiaAI",
-      "github": "https://github.com/cartesia-ai",
-      "linkedin": "https://linkedin.com/company/cartesia-ai"
+      "x": "https://x.com/useMaedo",
+      "linkedin": "https://www.linkedin.com/company/maedo"
     }
   }
 }

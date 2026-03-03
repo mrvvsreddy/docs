@@ -1,0 +1,81 @@
+---
+title: "Configure Webchat"
+description: "Customize your widget's appearance, identity, and behavior."
+---
+
+The Maedo Widget Editor gives you full control over how your agent looks and interacts with your users. Follow these steps to tailor every detail of your webchat experience.
+
+<Steps>
+  <Step title="Design & Appearance">
+    ### Setup your brand visuals
+    Match the widget to your website's visual style.
+    
+    <ResponseField name="Primary Color" type="string">
+      The theme color for the launcher, buttons, and interaction elements (e.g., `#000000`).
+    </ResponseField>
+    <ResponseField name="Launcher Icon" type="string">
+      The SVG icon that represents the widget in its closed state.
+    </ResponseField>
+  </Step>
+
+  <Step title="Agent Identity">
+    ### Define who your agent is
+    Define how your AI agent presents itself to users.
+
+    <ResponseField name="Agent Name" type="string">
+      The primary name displayed at the top of the chat window.
+    </ResponseField>
+    <ResponseField name="Role Description" type="string">
+      A short description of the agent's purpose (e.g., "Customer Support").
+    </ResponseField>
+    <ResponseField name="Initials" type="string">
+      Fallback characters shown in the avatar bubble (e.g., "MA").
+    </ResponseField>
+    <ResponseField name="Avatar URL" type="string">
+      Direct link to an image file for the agent's profile picture.
+    </ResponseField>
+  </Step>
+
+  <Step title="Home Screen & Launcher">
+    ### Design the landing experience
+    Configure the initial state users see when they first open the widget.
+
+    <ResponseField name="Home Title" type="string">
+      The main greeting text on the launcher home screen (e.g., "Hi Maya").
+    </ResponseField>
+    <ResponseField name="Home Subtitle" type="string">
+      Supporting text below the main title.
+    </ResponseField>
+    <ResponseField name="Start Chat Button" type="string">
+      Label for the primary CTA to begin a conversation.
+    </ResponseField>
+  </Step>
+
+  <Step title="Messaging Flow">
+    ### Tailor the conversation
+    Control the text and tone of the active chat interface.
+
+    <ResponseField name="Greeting Title" type="string" default="Hello!">
+      The headline users see when starting a new conversation.
+    </ResponseField>
+    <ResponseField name="Welcome Message" type="string">
+      The first automated message sent to users in a new thread.
+    </ResponseField>
+  </Step>
+
+  <Step title="Security & Deployment">
+    ### Secure your widget
+    Ensure your widget is only used where intended.
+
+    <ResponseField name="Allowed Domains" type="string[]">
+      Restrict the widget to specific domains (e.g., `maedo.in`).
+    </ResponseField>
+    <ResponseField name="Rate Limit" type="number">
+      Maximum calls per minute per user to ensure system stability.
+    </ResponseField>
+  </Step>
+</Steps>
+
+<Success>
+  **Pro-tip**: Changes made in the Widget Editor are previewed instantly on the dashboard and go live as soon as you hit **Save Changes**.
+</Success>
