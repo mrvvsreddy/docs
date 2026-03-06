@@ -1,0 +1,53 @@
+---
+title: "React / Next.js Integration"
+description: "How to add Maedo Webchat to your React or Next.js application."
+---
+
+For React-based applications, we recommend using a component-based approach to ensure the widget mounts and unmounts correctly.
+
+## Installation Steps
+
+1.  Create a new component called `MaedoWidget.tsx` (or `.jsx`).
+
+```tsx MaedoWidget.tsx
+import { useEffect } from 'react';
+
+const MaedoWidget = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://cdn.maedo.in/scripts/webchat/widget-v2.js";
+    script.defer = true;
+    script.setAttribute('data-agent-config', "YOUR_AGENT_TOKEN_HERE");
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return null;
+};
+
+export default MaedoWidget;
+```
+
+2.  Import and use this component in your root layout or main application component (e.g., `App.tsx` or `layout.tsx`).
+
+```tsx layout.tsx
+import MaedoWidget from './components/MaedoWidget';
+
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body>
+        {children}
+        <MaedoWidget />
+      </body>
+    </html>
+  );
+}
+```
+
+## Next.js (App Router)
+
+If you are using the Next.js App Router, ensure the component is a Client Component by adding `'use client';` at the top of the file.

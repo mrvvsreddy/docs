@@ -29,7 +29,16 @@
             "pages": [
               "agents/introduction",
               "agents/quickstart",
-              "agents/configure"
+              "agents/configure",
+              {
+                "group": "Installation",
+                "pages": [
+                  "installation/webchat",
+                  "installation/static",
+                  "installation/react",
+                  "installation/shopify"
+                ]
+              }
             ]
           },
           {

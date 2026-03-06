@@ -1,0 +1,35 @@
+---
+title: "Static HTML Integration"
+description: "How to add Maedo Webchat to any website using HTML and JavaScript."
+---
+
+Integrating Maedo Webchat into a static website is as simple as adding a single script tag to your HTML.
+
+## Installation Steps
+
+1.  Copy the following script tag, replacing `YOUR_AGENT_TOKEN_HERE` with your actual agent token.
+
+```html
+<script defer src="https://cdn.maedo.in/scripts/webchat/widget-v2.js" data-agent-config="YOUR_AGENT_TOKEN_HERE"></script>
+```
+
+2.  Paste this script tag before the closing `</body>` tag of your website's HTML file.
+
+```html index.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+  </head>
+  <body>
+    <!-- Your website content -->
+
+    <!-- Maedo Webchat -->
+    <script defer src="https://cdn.maedo.in/scripts/webchat/widget-v2.js" data-agent-config="YOUR_AGENT_TOKEN_HERE"></script>
+  </body>
+</html>
+```
+
+## Configuration
+
+You can further customize the widget's appearance and behavior from the Maedo Dashboard under **Channels > Website Widget > Editor**.
